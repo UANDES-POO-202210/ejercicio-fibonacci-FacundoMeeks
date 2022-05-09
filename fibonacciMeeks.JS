@@ -1,12 +1,23 @@
 
 function FuncionFibonacci(number){
-    var iteracion=1;
-    for (iteracion<number;i++){
+    
+    var fn0=0;
+    var fn1=1;
+    var result=0;
+    for (let iteracion=1; iteracion<number;iteracion++){
+        result=fn1+fn0;
+        fn0=fn1;
+        fn1=result;
+        
+        
+
+
 
     } 
-    return number*number;
+    return console.log(result);
 
 }
-var use_function=FuncionFibonacci(5)
-console.log(use_function);
+var use_function=FuncionFibonacci(8);
+console.log(use_function)
+
 
